@@ -1,0 +1,611 @@
+:root{
+    --base: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* styling for shoppingcart*/
+
+
+
+.checkOutButton {
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-bottom: 167px;
+    margin-left: 80px;
+    display: inline-block;
+    text-align: center;
+    border-color: #aaabab;
+    color: #000000;
+    background-color: #27c8a4;
+}
+
+.shoppingCart {
+    position: relative;
+    top: 10px;
+    font-size: large;
+    border-spacing: 10px;
+    
+    position: relative;
+    margin-top: 100px;
+    left: 50px;
+  }
+
+.shoppingCart th {
+    border: 3px outset #b1b1b1;
+    border-radius: 10px;
+    font-size: x-large;
+    padding: 10px;
+    background-color: white;
+}
+
+.shoppingCart td {
+    border: 1px solid #b1b1b1;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+}
+
+.differently {
+    display: flex; 
+    justify-content: center;
+
+    max-width: 100%;
+    
+    margin: 4.7%;
+    padding: 50px;
+}
+.difBox {
+    display: table-cell;
+    background-color: white;
+    text-align: center;
+
+    width: 80%;
+    height: 100%;
+    vertical-align: middle;
+    
+    box-shadow: -1px 0 5px 5px rgb(0,0,0,0.5);
+    margin: 10px;
+}
+
+.differently {
+    display: flex; 
+    justify-content: center;
+
+    max-width: 100%;
+    
+    margin: 4.7%;
+    padding: 50px;
+}
+
+.differently select{
+    padding: 20px;
+}
+
+/* styling for the big block on top of every page */
+
+header {
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    display: block;
+    background-color: var(--base);
+}
+.innerheader {
+    display: inline;
+    width: 55%;
+    height: 10vh;
+    display: block;
+    align-items: middle;
+    margin: 0 auto;
+}
+.logo_container {
+    height: 10vh;
+    display: table;
+    float: left;
+}
+.logo_container h1 {
+    display: table-cell;
+    vertical-align: middle;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 38px;
+    padding-left: 50px;
+}
+.logo_container h1 a {
+    color: white;
+    text-decoration: none;
+}
+.logo_container h1 a:hover {
+    color: rgb(168, 168, 168);
+    cursor: pointer;
+}
+
+.innerheader input[type=text] {
+    position: fixed;
+    width: 40vw;
+    height: 50px;
+    border: none;
+    font-size: 16px;
+    margin-top: 15px;
+}
+.innerheader button {
+    position: fixed;
+    width: 5vw;
+    height: 50px;
+    padding-top: middle;
+    border: none;
+    background-color: rgb(80, 80, 80);
+    margin-top: 15px;
+
+    font-size: 18px;
+}
+.innerheader button a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.innerheader button a:hover {
+    color: rgb(208, 208, 208);
+    cursor: pointer;
+}
+
+.navigation {
+    float: right;
+    height: 100%;
+    padding-top: 28px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.navigation li {
+    width: 100%;
+    list-style: none;
+    display: inline;
+    font-size: 20px;
+    margin: 10px 25px;
+}
+.navigation li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* The 6 categories that are always there */
+
+.categories {
+    width: 100%;
+    display: inline;
+    overflow: hidden;
+}
+.categories button {
+    border: none;
+    background-color:plum;
+    padding: 15px 32px;
+
+    width: 16%;
+    text-align: center;
+    text-decoration: none;
+
+    font-size: 120%;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+/* end of header decorations */
+
+
+/* The main in mainPage */
+
+
+/* first up, the advertisement right below the categories */
+
+.advertisement {
+    align-self:center;
+    width: 83.2%;
+    height: 200px;
+    margin-top: 8%;
+    background-color: rgb(215, 252, 205);
+    overflow: hidden;
+}
+.advertisement h1 {
+    margin-top: 10px;
+}
+.ad {
+    text-align: center;
+    font-size: 38px;
+}
+.advertisement h1 a {
+    text-decoration: underline;
+    color: black;
+    margin-top: 15px;
+    font-size: 30px;
+    margin-left: 560px;
+}
+.advertisement h1 a:hover{ color: red; }
+
+.slogan {
+    margin-top: 30px;
+    font-size: 22px;
+    text-align: center;
+}
+
+/* the filter box with everything in it */
+
+.filter { 
+    float: right;
+    width: 16%;
+    height: 120vh;
+    margin-top: -13.13%;
+    margin-bottom: 8%;
+    background-color: azure;
+    text-align: center;
+    overflow: hidden;
+}
+.filter h1 {
+    font-size: 24px;
+}
+.option_filter a {
+    color: black;
+    text-decoration: none;
+}
+.option p {
+    font-size: 21px;
+    text-decoration: underline;
+    margin-bottom: 2%;
+}
+
+.option_filter {
+    text-align: left;
+    margin-left: 70px;
+}
+.filter input[type=submit] {
+    height: 3%;
+    width: 50%;
+    font-size: 16px;
+    border-color: red;
+    background-color: rgb(184, 222, 255);
+}
+.filter input[type=submit]:hover {
+    cursor: pointer;
+    background-color: rgb(141, 161, 235);
+}
+
+/* the dummy products for the css and html site */
+
+.DummyProducts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    max-width: 100%;
+    
+    height: 5%;
+    margin: auto;
+    padding: 5px;
+}
+.product {
+    background-color: white;
+    text-align: center;
+    box-shadow: -1px 0 5px 5px rgb(0,0,0,0.5);
+    margin: 10px;
+}
+.info {
+    margin: 20px;
+}
+.info h3 a {
+    font-size: 18px;
+    text-decoration: underline;
+    color: black;
+}
+.info h3 a:hover {
+    color: red;
+    cursor: pointer;
+}
+.info p {
+    font-size: 16px;
+    color: #25343d;
+}
+.button {
+    background-color: #27c8a4;
+    padding: 15px;
+}
+.button button {
+    background: none;
+    border: none;
+}
+.button button a {
+    color: white;
+    font-weight: bold;
+}
+.button button a:hover {
+    color: #aaabab;
+    cursor: pointer;
+}
+
+
+/* Styling for the footer of main page */
+
+footer {
+    position: absolute;
+    width: 100vw;
+    height: 20vh;
+    display: block;
+    background-color: var(--base);
+}
+.contact {
+    color: white;
+    float: right;
+    padding-right: 500px;
+}
+
+/* main page styling done, the rest is for other pages */
+
+/* the sign in page */
+
+.container {
+    display: flex; 
+    justify-content: center;
+
+    max-width: 100%;
+    
+    margin: 4.7%;
+    padding: 50px;
+}
+.box {
+    display: table-cell;
+    background-color: white;
+    text-align: center;
+
+    width: 40%;
+    height: 350px;
+    vertical-align: middle;
+    
+    box-shadow: -1px 0 5px 5px rgb(0,0,0,0.5);
+    margin: 10px;
+}
+.text {
+    margin: 20px;
+}
+.text h1 {
+    font-size: 40px;
+    text-decoration: underline;
+    font-style: bold;
+    color: black;
+}
+.text label {
+    font-size: 22px;
+    color: black;
+    margin-top: 10px;
+}
+.text input {
+    font-size: 16px;
+    height: 30px;
+    width: 60%;
+    margin-top: 10px;
+}
+.login {
+    background-color: #27c8a4;
+    padding: 24.5px;
+}
+.login button {
+    font-size: 25px;
+
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+}
+.login button a {
+    color: white;
+    text-decoration: underline;
+    font-style: bold;
+}
+.login button a:hover {
+    background-color: rgb(138, 192, 225);
+    color: black;
+    cursor: pointer;
+}
+
+/* end of sign in page */
+
+/* sign up page */
+
+.wrapper {
+    display: flex; 
+    justify-content: center;
+
+    max-width: 100%;
+    
+    margin: 4.7%;
+    padding: 50px;
+}
+.information {
+    display: table-cell;
+    background-color: white;
+    text-align: center;
+
+    width: 60%;
+    height: 978px;
+    vertical-align: middle;
+    
+    box-shadow: -1px 0 5px 5px rgb(0,0,0,0.5);
+    margin: 10px;
+}
+
+.general, .about, .address, .password {
+    margin: 20px;
+}
+.general h1 {
+    font-size: 40px;
+    text-decoration: underline;
+    font-style: bold;
+    color: black;
+}
+.address h3, .password h3 {
+    margin: 15px;
+    font-size: 18px;
+    text-decoration: underline;
+}
+.general label, .rest label, .password label {
+    font-size: 15px;
+    text-decoration: underline;
+    color: black;
+    margin-top: 10px;
+}
+.general input, .general select, .rest input, .rest select, .password input {
+    font-size: 14px;
+    height: 25px;
+    width: 50%;
+    margin-top: 5px;
+}
+
+.horizontal {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+
+    max-width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.horizontal input, .horizontal select {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.labels {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 100%;
+}
+
+.about input {
+    width: 75%;
+    height: 60px;
+}
+
+.what {
+    max-width: 100%;
+    margin-left: 30%;
+    margin-right: 20%;
+}
+.what label {
+    margin-right: 60px;
+}
+
+
+.if_supplier p {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 3px;
+    text-decoration: underline;
+}
+.if_supplier label {
+    font-weight: bold;
+}
+.if_supplier input, .street input {
+    width: 50%;
+}
+
+.sign-up {
+    background-color: #27c8a4;
+    padding: 25px;
+}
+.sign-up button {
+    font-size: 25px;
+
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+}
+.sign-up button a {
+    color: white;
+    text-decoration: underline;
+    font-style: bold;
+}
+.sign-up button a:hover {
+    background-color: rgb(138, 192, 225);
+    color: black;
+    cursor: pointer;
+}
+
+/* product page styling */
+
+.product_page {
+    display: flex; 
+    justify-content: center;
+
+    max-width: 100%;
+    
+    margin-top: 6.2%;
+    margin-bottom: 3%;
+    padding: 50px;
+}
+.product_box {
+    display: flex;
+    background-color: white;
+    text-align: center;
+
+    width: 75%;
+    height: 60%;
+    vertical-align: middle;
+    
+    box-shadow: -1px 0 5px 5px rgb(0,0,0,0.5);
+    margin: 10px;
+}
+
+.product_image {
+    display: grid;
+    align-content: left;
+}
+.product_image img {
+    height: 100%;
+    width: 350px;
+}
+.product_text {
+    display: grid;
+    text-align: center;
+}
+.product_text h1 {
+    text-decoration: underline;
+    margin-top: 20px;
+}
+.product_text p {
+    vertical-align: middle;
+    margin: 20px;
+}
+.productx_text h3 {
+    margin-bottom: 25px;
+}
+
+.product_button {
+    background-color: #27c8a4;
+    padding: 30px;
+}
+.product_button button {
+    font-size: 25px;
+    margin-top: 90px;
+
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+}
+.product_button button a {
+    color: white;
+    text-decoration: underline;
+    font-style: bold;
+}
+.product_button button a:hover {
+    background-color: rgb(138, 192, 225);
+    color: black;
+    cursor: pointer;
+}
